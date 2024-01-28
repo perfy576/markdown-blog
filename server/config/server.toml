@@ -1,0 +1,10 @@
+[server]
+ip = "0.0.0.0"
+port = 10000
+
+[system]
+# chroot = "D:\\Home\\markdown-blog\\posts"
+chroot = "/data/code/markdown-blog/posts"
+
+[authority]
+password = "521521"

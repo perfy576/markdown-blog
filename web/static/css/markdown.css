@@ -1,0 +1,263 @@
+:root {
+    --bg-color: white;
+    --side-bar-bg-color: #f5f7f9;
+    --control-text-color: #3b454e;
+    --primary-color: #3884ff;
+    --primary-btn-border-color: #3884ff;
+    --active-file-bg-color: #e6ecf1;
+    --active-file-text-color: inherit;
+    --active-file-border-color: #3884ff;
+    --item-hover-text-color: #242a31;
+    --item-hover-bg-color: #f5f7f9;
+    --window-border: 1px solid #e6ecf1;
+    --select-text-font-color: white;
+    --select-text-bg-color: #1968e6;
+
+    --md-char-color: #9daab6;
+    --heading-char-color: #9daab6;
+    --meta-content-color: #3884ff;
+
+    --borders: #e6ecf1;
+    --table-border-color: #e6ecf1;
+    --boxes: #f5f7f9;
+    --boxes-darker: #d8e0e7;
+    --boxes-darker2: #bac2c9;
+    --boxes-darkest: #9daab6;
+    --drag-placeholder-color: #d8e0e7;
+
+    --text-color: #3b454e;
+    --heading-text-color: #242a31;
+    --light-text-color: #9daab6;
+    --light-text-color-darker: #74818d;
+    --codeboxes: #183055;
+    --codeboxes-lighter: #1c375f;
+    --rawblock-edit-panel-bd: transparent;
+
+    --primary-color-darkest: #001f50;
+    --primary-color-darker2: #00307c;
+    --primary-color-darker: #1968e6;
+    --focus-ring-color: #3884ff;
+
+    --danger-color: rgb(255, 70, 66);
+
+    --node-fill: #ececff;
+    --node-border: #ccccff;
+    --cluster-fill: #ffffde;
+    --cluster-border: #aaaa33;
+    --note-fill: #fff5ad;
+    --note-border: #aaaa33;
+
+    /*****************************/
+
+    --font-family: "Roboto", sans-serif;
+    --code-font-family: "Source Code Pro";
+    --monospace: "Source Code Pro";
+}
+
+.code-toolbar {
+    padding: 0.2rem 0.4rem !important;
+    border-radius: 1rem !important;
+}
+
+
+/***************** 图片大小控制 ***************/
+.markdown img {
+    display: block;
+    max-width: 50%;
+    border-radius: 2px;
+    margin: 18px auto;
+}
+
+/***************** 图片大小控制 ***************/
+
+
+/***************** table ***************/
+.markdown table {
+    font-size: 0.875rem !important;
+    padding: 0 !important;
+    margin: 1.5rem 0 !important;
+    word-break: initial !important;
+}
+
+.markdown table tr {
+    border-top: 1px solid var(--borders) !important;
+    border-bottom: 1px solid var(--borders) !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.markdown table tr.md-end-block {
+    border-top: none !important;
+}
+
+.markdown table tbody tr:last-child {
+    border-bottom: none !important;
+}
+
+.markdown table tr th {
+    font-weight: bold !important;
+    border: none !important;
+    border-bottom: solid 2px var(--borders) !important;
+    margin: 0 !important;
+    padding: 10px 16px !important;
+    transition-duration: 0.3s !important;
+    transition-property: background-color !important;
+}
+
+.markdown table tr td {
+    border: none !important;
+    margin: 0 !important;
+    padding: 10px 16px !important;
+    transition-duration: 0.3s !important;
+    transition-property: background-color !important;
+}
+
+.markdown table tr td:hover,
+.markdown table tr th:hover {
+    background-color: var(--boxes) !important;
+}
+
+.markdown table tr th:first-child,
+.markdown table tr td:first-child {
+    margin-top: 0 !important;
+}
+
+.markdown table tr th:last-child,
+.markdown table tr td:last-child {
+    margin-bottom: 0 !important;
+}
+
+.markdown table tr:nth-child(2n),
+thead {
+    background-color: #fafafa;
+}
+
+/* 目录列表 */
+
+.table-of-contents {
+    list-style-type: none;
+    margin: 0;
+    padding-left: 0 2px;
+    padding-inline-start: 10px;
+}
+
+.table-of-contents ul {
+    list-style-type: none;
+    margin: 0;
+    padding-left: 0 2px;
+    padding-inline-start: 10px;
+}
+
+.table-of-contents li {
+    padding: 0;
+    margin: 0;
+    /* font: 200 20px/1.5 Helvetica, Verdana, sans-serif; */
+    border-bottom: 1px solid #ccc;
+}
+
+.table-of-contents li:last-child {
+    border: none;
+}
+
+.table-of-contents li a {
+    text-decoration: none;
+    color: #000;
+    display: block;
+    width: 200px;
+
+    /* -webkit-transition: font-size 0.3s ease, background-color 0.3s ease;
+    -moz-transition: font-size 0.3s ease, background-color 0.3s ease;
+    -o-transition: font-size 0.3s ease, background-color 0.3s ease;
+    -ms-transition: font-size 0.3s ease, background-color 0.3s ease;
+    transition: font-size 0.3s ease, background-color 0.3s ease; */
+}
+
+.table-of-contents li a:hover {
+    /* font-size: 30px; */
+    background: #f6f6f6;
+}
+
+
+
+/************ 引言  ************/
+.markdown blockquote {
+    border-left: 4px solid #42b983;
+    padding: 10px 15px;
+    color: #777;
+    background-color: rgba(66, 185, 131, .1);
+}
+
+/************ 引言  ************/
+
+
+/************ 标题  ************/
+
+.markdown h1:hover {
+    text-decoration: none;
+}
+
+.markdown h1 {
+    position: relative;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    line-height: 1.4;
+    cursor: text;
+    padding-bottom: .4rem;
+    font-size: 2.2rem;
+    line-height: 1.3;
+    padding-bottom: 0.5em;
+    border-bottom: 2px solid #ddd;
+}
+
+.markdown h2 {
+    position: relative;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    line-height: 1.4;
+    cursor: text;
+    padding-bottom: .4rem;
+    font-size: 2.2rem;
+    line-height: 1.3;
+    color: #34495e;
+    font-size: 1.75rem;
+    line-height: 1.225;
+    margin: 35px 0 15px;
+    padding-bottom: 0.5em;
+    border-bottom: 1.5px solid #ddd;
+}
+
+.markdown h3 {
+    font-size: 1.4rem;
+    line-height: 1.43;
+    margin: 20px 0 7px;
+    padding-bottom: 0.5em;
+    border-bottom: 1px solid #ddd;
+}
+
+.markdown h4 {
+    position: relative;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    line-height: 1.4;
+    cursor: text;
+    padding-bottom: .4rem;
+    font-size: 2.2rem;
+    line-height: 1.3;
+    padding-bottom: 0.5em;
+    border-bottom: 0.5px solid #ddd;
+}
+
+.markdown h5 {
+    position: relative;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    line-height: 1.4;
+    cursor: text;
+    padding-bottom: .4rem;
+    font-size: 2.2rem;
+    line-height: 1.3;
+}
