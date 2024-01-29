@@ -23,7 +23,7 @@ func GetMarkDownContent(request Request, config config.Config) Response {
 	json.Unmarshal([]byte(request.Body), get_markdown_content_request)
 	get_markdown_content_response := &GetMarkdownContentResponse{}
 
-	if strings.Contains(get_markdown_content_request.Filepath, "..") {
+	if strings.Contains(get_markdown_content_request.Filepath, "..") || strings.Contains(get_markdown_content_request.Filepath, "/.") {
 		return Response{
 			Body: "",
 		}

@@ -80,6 +80,11 @@ func TraverseDirectory(path string, dir *Directory, curDepth, maxDepth int, matc
 
 	if authority.ShowSubdir || matchPwd {
 		for i := range directorys {
+			// .开头的文件
+			if strings.Contains(directorys[i].Filepath, "/.") {
+				continue
+			}
+
 			addDirecotry := TraverseDirectory(directorys[i].Filepath, &directorys[i], curDepth+1, maxDepth, matchPwd)
 			if addDirecotry {
 				dir.Directory = append(dir.Directory, directorys[i])
